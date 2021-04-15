@@ -1,0 +1,25 @@
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h1::before, h1::after {
+        font-size: 7vw;
+    }
+
+    label {
+        font-size: 2vw;
+    }
+
+    #number {
+        width: 40vw;
+    }
+
+    .output {
+        font-size: 2vw;
+    }
+
+    .answer {
+        font-size: 3vw;
+    }
+}
