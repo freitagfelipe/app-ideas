@@ -1,6 +1,6 @@
 # Calculator
 
-<img src= "https://i.imgur.com/YYraBX0.png">
+<img src= "https://i.imgur.com/Kow7zvD.png">
 
 ### • Description: 
 
