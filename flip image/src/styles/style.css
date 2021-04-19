@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111820;
+    font-family: "Montserrat";
+    color: white;
+    border: 0px;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 10vw;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 83vh;
+    overflow: hidden;
+}
+
+label {
+    font-size: 5vw;
+}
+
+footer {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    pointer-events: none;
+    background-color: transparent;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+#link {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 80vw;
+    padding: 0px 5px;
+    border-bottom: 0.3vw solid white;
+    transition: 200ms;
+    font-size: 4vw;
+}
+
+.send {
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 5vw;
+    animation: boxShadow 2s infinite;
+}
+
+.homeButton {
+    padding: 3px;
+    border-radius: 5px;
+    transition: 100ms;
+    font-size: 7vw;
+    background-color: red;
+    animation: boxShadowHome 2.5s infinite;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 85%;
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+}
+
+.rotateButtons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 20%;
+    margin-top: 5vh;
+}
+
+.up {
+    width: 100%;
+}
+
+.right, .left {
+    width: 50%;
+}
+
+.down {
+    width: 100%;
+}
+
+.rotateButtons i {
+    font-size: 5.5vw;
+}
+
+.display {
+    display: none;
+}
+
+#link:focus {
+    border-bottom: 0.3vw solid red;
+}

@@ -1,0 +1,27 @@
+@keyframes boxShadow {
+    0% {
+        box-shadow: 0px 0px 20px red;
+    }
+    
+    50% {
+        box-shadow: 0px 0px 30px red;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px red;
+    }
+}
+
+@keyframes boxShadowHome {
+    0% {
+        box-shadow: 0px 0px 5px red;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px red;
+    }
+
+    100% {
+        box-shadow: 0px 0px 5px red;
+    }
+}

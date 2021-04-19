@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://kit.fontawesome.com/ade6113943.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/mediaQuery.css">
+    <link rel="stylesheet" href="./src/styles/keyframes.css">
+    <title>Flip Image</title>
+</head>
+<body>
+    <header>
+        <h1>Flip Image</h1>
+    </header>
+    
+    <main>
+        <section class="form">
+            <label for="imageLink">Insert the link for your image below</label>
+            <input type="text" name="link" id="link" autocomplete="off" placeholder="https://imagelink...">
+            <button class="send">Send</button>
+        </section>
+
+        <p class="display">Select the image that you want to rotate!</p>
+        <section class="image display">
+            <img src="#" class="0 display">
+            <img src="#" class="1 display">
+            <img src="#" class="2 display">
+            <img src="#" class="3 display">
+        </section>
+
+        <section class="rotateButtons display">
+            <button class="up"><i class="fas fa-arrow-up"></i></button>
+            <button class="left"><i class="fas fa-arrow-left"></i></button>
+            <button class="right"><i class="fas fa-arrow-right"></i></button>
+            <button class="down"><i class="fas fa-arrow-down"></i></button>
+        </section>
+    </main>
+
+    <footer>
+        <button class="homeButton display"><i class="fas fa-home"></i></button>
+    </footer>
+
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
