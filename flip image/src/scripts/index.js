@@ -1,7 +1,8 @@
 const buttons = document.querySelectorAll("button");
 const homeButton = document.querySelector(".homeButton");
 const sections = document.querySelectorAll("section");
-const introParagraph = document.querySelector("p");
+const errorMessage = document.querySelector(".error");
+const introParagraph = document.querySelector(".intro");
 const imagesInput = document.querySelector("#link");
 const images = document.querySelectorAll("img");
 
@@ -12,7 +13,12 @@ let imageNumber = "";
 buttons.forEach(i => {
     i.addEventListener("click", event => {
         if (i.classList.contains("homeButton") || i.classList.contains("send")) {
-            displaySection(event.target);
+            if (validateURL(imagesInput.value)) {
+                displaySection(event.target);
+                errorMessage.style.visibility = "hidden";
+            } else {
+                errorMessage.style.visibility = "visible";
+            }
         } else {
             rotateButtons(event.target);
         }
@@ -25,24 +31,32 @@ images.forEach(i => {
     });
 });
 
-function displaySection(wichButton) {
-    if (imagesInput.value.startsWith("https://")) {
-        if (wichButton.classList.contains("send")) {
-            sections.forEach(i => {
-                i.classList.toggle("display");
-            });
-
-            showImage();
-        } else if(wichButton.classList.contains("homeButton") && !(sections[1].classList.contains("display"))) {
-            defaultFunction()
-        }
-
-        if (!(window.matchMedia("(max-width: 1200px)").matches)) {
-            introParagraph.classList.toggle("display");
-        }
-
-        homeButton.classList.toggle("display");
+function validateURL(url) {
+    let check = "";
+    try {
+        check = new URL(url);
+    } catch (error) {
+        return false;
     }
+    return check.protocol === "https:" || check.protocol === "http:";
+}
+
+function displaySection(wichButton) {
+    if (wichButton.classList.contains("send")) {
+        sections.forEach(i => {
+            i.classList.toggle("display");
+        });
+
+        showImage();
+    } else if(wichButton.classList.contains("homeButton") && !(sections[1].classList.contains("display"))) {
+        defaultFunction()
+    }
+
+    if (!(window.matchMedia("(max-width: 1200px)").matches)) {
+        introParagraph.classList.toggle("display");
+    }
+
+    homeButton.classList.toggle("display");
 }
 
 function showImage() {
@@ -69,7 +83,9 @@ function defaultFunction() {
     });
 
     if (window.matchMedia("(min-width: 1201px)").matches) {
-        images[imageNumber].style.border = "0px";
+        images.forEach(i => {
+            i.style.border = "0px";
+        })
     }
 
     images[0].parentElement.classList.remove("displayFlex");

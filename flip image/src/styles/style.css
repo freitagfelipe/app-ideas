@@ -75,12 +75,20 @@ img {
 
 #link {
     margin-top: 30px;
-    margin-bottom: 100px;
     width: 80vw;
     padding: 0px 5px;
     border-bottom: 0.3vw solid white;
     transition: 200ms;
     font-size: 4vw;
+}
+
+.error {
+    font-size: 5vw;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    font-style: italic;
+    visibility: hidden;
+    color: red;
 }
 
 .send {
