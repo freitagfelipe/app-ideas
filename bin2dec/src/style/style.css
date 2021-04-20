@@ -24,24 +24,24 @@ body {
 
 h1 {
     font-weight: 500;
-    font-size: 15vw;
+    font-size: 12vmin;
 }
 
 h1::before, h1::after {
     content: "000";
     font-family: "Roboto Mono";
-    font-size: 8vw;
+    font-size: 8vmin;
     opacity: 0.3;
 }
 
 label {
-    font-size: 5vw;
+    font-size: 4vmin;
     margin-top: 20px; 
 }
 
 #number {
-    width: 80vw;
-    height: 4vh;
+    width: 95vmin;
+    height: 4vmin;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: rgba(0,0,0,0);
@@ -51,12 +51,12 @@ label {
 }
 
 .output {
-    font-size: 5vw;
+    font-size: 5vmin;
     height: 20px;
 }
 
 .answer {
-    font-size: 7vw;
+    font-size: 6.5vmin;
     margin-top: 20px;
 }
 
