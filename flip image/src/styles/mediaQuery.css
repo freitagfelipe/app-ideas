@@ -5,19 +5,19 @@
     }
 
     h1 {
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
 
     label {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     header {
-        height: 14vh;
+        height: 10vh;
     }
 
     main {
-        height: 80vh; 
+        height: 83vh; 
     }
 
     footer {
@@ -30,16 +30,16 @@
     }
 
     .error {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     #link {
-        font-size: 1.5vw;
-        width: 50vw;
+        font-size: 1.1vw;
+        width: 40vw;
     }
 
     .send {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     .homeButton {
@@ -48,8 +48,8 @@
     }
 
     .image {
-        width: 55%;
-        height: 75%;
+        width: 45%;
+        height: 65%;
     }
 
     .rotateButtons {
