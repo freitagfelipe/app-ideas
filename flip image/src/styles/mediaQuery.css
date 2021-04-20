@@ -29,12 +29,17 @@
         height: 50%;
     }
 
+
+    .intro {
+        font-size: 2.5vmin
+    }
+
     .error {
         font-size: 1.5vw;
     }
 
     #link {
-        font-size: 1.1vw;
+        font-size: 1.3vw;
         width: 40vw;
     }
 
@@ -53,7 +58,7 @@
     }
 
     .rotateButtons {
-        width: 10%;
+        width: 20vmin;
         height: 15%;
         margin-top: 1vh;
     }
