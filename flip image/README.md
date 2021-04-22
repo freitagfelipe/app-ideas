@@ -16,4 +16,4 @@
 
 ### • Link:
 
--You can see the final result in [Codepen](https://codepen.io/freitagfelipe/pen/VwPGNzy)
+-You can see the final result in [Codepen](https://codepen.io/freitagfelipe/pen/VwPGNzy) or in [Netlify](https://aces-flipimage.netlify.app)
