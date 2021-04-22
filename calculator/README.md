@@ -23,4 +23,4 @@
 
 ### • Link:
 
--You can see the final result in [Codepen](https://codepen.io/freitagfelipe/pen/KKaozgb)
+-You can see the final result in [Codepen](https://codepen.io/freitagfelipe/pen/KKaozgb) or in [Netlify](https://aces-calculator.netlify.app)
